@@ -1,0 +1,108 @@
+:root {
+    --color1: rgb(47, 71, 114);
+    --color2: rgb(244, 252, 255);
+    --color3: rgb(0, 0, 32);
+    --color4: yellow;
+    --font1: 'Open Sans';
+    --font2: 'Rubik';
+}
+
+* {
+    padding: 0px;
+    border: 0px;
+}
+
+h1 {
+    font-size: x-large;
+    align-self: center;
+}
+
+h1,
+h2,
+a {
+    font-family: var(--font1);
+}
+
+h1,
+h3 {
+    color: var(--color2);
+}
+
+h3 {
+    font-family: var(--font2);
+}
+
+#profile {
+    width: 80px;
+    padding: 1rem;
+
+}
+
+.title {
+    background-color: var(--color1);
+    display: flex;
+    padding: auto 50%;
+}
+
+.nav {
+    padding: 0px;
+    border: 0px;
+}
+
+.navigation {
+    background-color: rgb(255, 39, 39);
+    padding: 10px;
+    border: 1000px;
+
+}
+
+.nav ul {
+    background-color: var(--color3);
+    /*align-items: center;*/
+    /*list-style-type: none;*/
+
+}
+
+nav a {
+    display: flex;
+    text-decoration: none;
+    color: var(--color2);
+
+
+    padding: 0.5rem 0.5rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--color2);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+    float: right;
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+
+.open a {
+    display: block;
+}
+
+footer {
+    font-family: var(--font1);
+    background-color: var(--color1);
+    padding: 1rem;
+    text-align: center;
+}
+
+.resalt {
+    color: var(--color4);
+}

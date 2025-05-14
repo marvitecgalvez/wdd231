@@ -12,23 +12,38 @@
     <link rel="stylesheet" href="styles/small.css">
     <script src="scripts/course-cards.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/ham-menu.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <header>
-        <h1 id="tittle1">Temple Album</h1>
+        <div class="title">
+            <img id="profile" src="images/profile.webp" alt="Profile photo" width="70">
+            <h1>Marvin M. Gálvez</h1>
+        </div>
+
         <button type="button" id="menu" aria-label="open & close menu"></button>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Old</a></li>
-                <li><a href="">New</a></li>
-                <li><a href="">Large</a></li>
-                <li><a href="">Small</a></li>
+        <nav class="nav">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Chamber</a></li>
+                <li><a href="">Final</a></li>
+                <li><a href="">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com">LinkedIn</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span> 🌎 Marvin M. Gálvez 🌎 Perú</p>
+        <p class="resalt">Last Modification: <span id="lastModified"></span></p>
+    </footer>
 </body>
 
 </html>
