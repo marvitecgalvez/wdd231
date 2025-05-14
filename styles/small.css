@@ -15,21 +15,17 @@
 h1 {
     font-size: x-large;
     align-self: center;
+    font-family: var(--font2);
 }
 
-h1,
 h2,
 a {
     font-family: var(--font1);
 }
 
-h1,
-h3 {
-    color: var(--color2);
-}
-
 h3 {
     font-family: var(--font2);
+    color: var(--color2);
 }
 
 #profile {
@@ -42,6 +38,14 @@ h3 {
     background-color: var(--color1);
     display: flex;
     padding: auto 50%;
+}
+
+.title p {
+    display: block;
+    font-size: x-large;
+    align-self: center;
+    font-family: var(--font1);
+    color: var(--color2);
 }
 
 .nav {
