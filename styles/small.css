@@ -67,6 +67,7 @@ a {
 
 .nav ul {
     background-color: var(--color3);
+    list-style-type: none;
 }
 
 nav a {
