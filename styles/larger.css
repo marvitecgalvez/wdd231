@@ -5,17 +5,36 @@
         justify-content: space-around;
     }
 
+    .open {
+
+    }
+
     #menu {
         display: none;
     }
 
     .navigation {
-		flex-direction: row;
-	}
+        flex-direction: row;
+    }
 
-	.navigation a {
-		display: block;
-		flex: 1 1 100%;
-	}
+    nav ul li {
+        display: block;
+    }
 
+    .open li {
+        display: f;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (min-width: 470px) {
+    .navigation a {
+        font-size: medium;
+    }
 }
