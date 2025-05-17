@@ -16,12 +16,14 @@ lastModified.innerHTML = document.lastModified;
 
 
 
-//////////////////////// Author's Name /////////////////////////////////////////////////
 
+
+//////////////////////// Author's Name /////////////////////////////////////////////////
+/*
 const authorName = document.querySelector('#authorName');
 
 const myName = document.querySelector('#myName');
 
 myName = authorName.getAttribute('content').valueOf;
 
-myName.innerHTML = document.contains;
+myName.innerHTML = document.contains;*/

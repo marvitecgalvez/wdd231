@@ -13,6 +13,8 @@
     <script src="scripts/course-cards.js" defer></script>
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/ham-menu.js" defer></script>
+    <meta property="og:title" content="Course Home Pages">
+    <link rel="icon" href="images/favicon.ico ">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap" rel="stylesheet">
@@ -23,7 +25,7 @@
     <header>
         <div class="title">
             <img class="shadow" id="profile" src="images/profile.webp" alt="Profile photo" width="70">
-            <span id="myName"></span>
+            <span id="myName">Marvin M. Gálvez</span>
         </div>
 
         <button type="button" id="menu" aria-label="open & close menu"></button>
@@ -39,14 +41,38 @@
     </header>
     <main>
         <h1>Home</h1>
-        <section>
+        <div class="cardGrid">
+            <section class="card shadow">
+                <h2>Course Work</h2>
+                <ul>
+                    <li>Work 1</li>
+                    <li>Work 2</li>
+                    <li>Work 3</li>
+                </ul>
+            </section>
 
-        </section>
-        <section>
+            <section class="card shadow">
+                <h2>Lima, Perú</h2>
+                <figure>
+                    <img src="images/lima-smaller.webp" alt="Lima picture" width="200">
+                    <figcaption>Lima Catedral</figcaption>
+                </figure>
+            </section>
 
-        </section>
-        <section>
-            
+        </div>
+
+        <section class="card card3 shadow">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="divButton">
+                <button type="button" id="all" aria-label="Show all courses">All</button>
+                <button type="button" id="cse" aria-label="Show cse courses">CSE</button>
+                <button type="button" id="wdd" aria-label="Show wdd courses">WDD</button>
+            </div>
+            <p>The Total Number of Credits is <span id="credits"></span></p>
+            <div id="container">
+
+            </div>
+
         </section>
     </main>
     <footer>

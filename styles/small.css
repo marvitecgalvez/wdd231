@@ -2,7 +2,7 @@
     --color1: rgb(47, 71, 114);
     --color2: rgb(244, 252, 255);
     --color3: rgb(0, 0, 32);
-    --color4: yellow;
+    --color4: rgb(255, 255, 0);
     --font1: 'Open Sans';
     --font2: 'Rubik';
 }
@@ -11,6 +11,12 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+}
+
+main {
+    align-items: center;
+    align-content: center;
+    margin: 0;
 }
 
 h1 {
@@ -33,6 +39,14 @@ a {
     align-items: center;
 }
 
+#myName {
+    font-family: var(--font1);
+    color: var(--color2);
+    padding: 1rem;
+    font-size: x-large;
+    align-self: center;
+}
+
 .shadow {
     box-shadow: 0 0 30px rgb(0, 0, 0);
     border: 1px solid black;
@@ -44,7 +58,7 @@ a {
     text-align: center;
     align-items: start;
     padding: 1rem;
-    
+
 }
 
 .title p {
@@ -61,9 +75,7 @@ a {
     border: 0px;
 }
 
-.navigation {
-
-}
+.navigation {}
 
 .nav ul {
     background-color: var(--color3);
@@ -104,6 +116,67 @@ nav a {
 
 .open li {
     display: block;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color3);
+    border-radius: 5px;
+    margin: 1rem;
+    max-width: 800px;
+
+}
+
+.card ul {
+    padding: 0 1rem;
+    margin: 1rem;
+
+}
+
+figcaption {
+    text-align: center;
+    padding: 0 0.5rem 1rem;
+}
+
+figure img {
+    width: 100%;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: large;
+    width: 100%;
+    background: var(--color1);
+    padding: 1rem;
+    text-align: center;
+}
+
+.divButton {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid var(--color3);
+}
+
+button {
+    margin: 0.5rem;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1  3;
+    padding: 1rem;
+}
+
+#container section {
+    font-family: var(--font1);
+    font-size: smaller;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    border: 1px solid var(--color3);
+    border-radius: 5px;
+    text-align: center;
 }
 
 footer {
