@@ -1,0 +1,28 @@
+{
+    "family-name": "Nelson",
+    "date": "2025-05-09",
+    "number-people": 4,
+    "visited": false,
+    "individual-data": [
+        {
+            "name": "Rex",
+            "gender": "male",
+            "birthdate": "1942-10-25"
+        },
+        {
+            "name": "Ramona",
+            "gender": "female",
+            "birthdate": "1943-12-02"
+        },
+        {
+            "name": "Rambo",
+            "gender": "male",
+            "birthdate": "1970-06-04"
+        },
+        {
+            "name": "Ruda",
+            "gender": "female",
+            "birthdate": "1975-08-19"
+        }
+    ]
+}
