@@ -106,34 +106,53 @@ wdd.addEventListener('click', () => {
 
 function createCard(filteredCourses) {
     document.querySelector('#container').innerHTML = "";
+    document.querySelector('#credits').innerHTML = '';
+
+    let myCredits = 0;
+
     filteredCourses.forEach(course => {
         let card = document.createElement('section');
         let name = document.createElement('p');
 
         name.innerHTML = `${course.subject} ${course.number}`;
 
+
         card.appendChild(name);
 
         document.querySelector('#container').appendChild(card);
+        card.className = `${course.completed ? 'completed' : ''}`
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                const subject = this.id.split('-')[1];
+                filterCourses(subject === 'all' ? 'all' : subject.toUpperCase());
+            });
+        });
+
+    //    if (courses.completed = true) {
+    //        card.className('completed');
+     //       name.className('completed');
+   //     }
     });
 };
 
-function totalCredits(filteredCourses) {
-    document.querySelector('#credits').innerHTML = '';
+//function totalCredits(filteredCourses) {
+   // document.querySelector('#credits').innerHTML = '';
 
-    let myCredits = []
-    let array = filteredCourses;
-    for (item of array) {
-        myCredits.push(item.credits);
-    }
+//    let myCredits = []
+//    let array = filteredCourses;
+ //   for (item of array) {
+//        myCredits.push(item.credits);
+ //   }
 
-    myTotalCredits = myCredits.reduce((total, num) => {
-        total + num;
-    }, 0);
+ //   myTotalCredits = myCredits.reduce((total, num) => {
+  //      total + num;
+ //   }, 0);
 
-    document.querySelector('#credits').innerHTML = `${myTotalCredits}`;
-};
-
+//    document.querySelector('#credits').innerHTML = `${myTotalCredits}`;
+//};
 
 totalCredits(courses);
 createCard(courses);

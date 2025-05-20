@@ -27,6 +27,9 @@
         font-size: 0.9rem;
     }
 
+    .divButton {
+        max-width: 420px;
+    }
 
 }
 
