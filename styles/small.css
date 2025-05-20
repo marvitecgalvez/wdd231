@@ -53,10 +53,13 @@ a {
 }
 
 .title {
+    width: 100%;
+
     background-color: var(--color1);
+
+    align-content: center;
     display: flex;
     text-align: center;
-    align-items: start;
     padding: 1rem;
 
 }
@@ -76,7 +79,7 @@ a {
 }
 
 nav a:hover {
-	background-color: var(--color2);
+    background-color: var(--color2);
     color: var(--color1);
     font-weight: bolder;
 }
@@ -194,6 +197,12 @@ button {
 .completed {
     background-color: var(--color3);
     color: var(--color4);
+}
+
+.square {
+    color: transparent;
+    background-color: aqua;
+    font-size: large;
 }
 
 footer {

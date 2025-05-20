@@ -90,17 +90,17 @@ let myTotalCredits = document.querySelector('#credits');
 
 all.addEventListener('click', () => {
     createCard(courses)
-    totalCredits(courses)
+    //totalCredits(courses)
 });
 
 cse.addEventListener('click', () => {
     createCard(courses.filter(course => course.subject == 'CSE'))
-    totalCredits(courses.filter(course => course.subject == 'CSE'))
+    //totalCredits(courses.filter(course => course.subject == 'CSE'))
 });
 
 wdd.addEventListener('click', () => {
     createCard(courses.filter(course => course.subject == 'WDD'))
-    totalCredits(courses.filter(course => course.subject == 'WDD'))
+    //totalCredits(courses.filter(course => course.subject == 'WDD'))
 });
 
 
@@ -120,39 +120,35 @@ function createCard(filteredCourses) {
         card.appendChild(name);
 
         document.querySelector('#container').appendChild(card);
-        card.className = `${course.completed ? 'completed' : ''}`
+        card.className = `${course.completed ? 'completed' : ''}`;
 
-        filterButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                this.classList.add('active');
-                const subject = this.id.split('-')[1];
-                filterCourses(subject === 'all' ? 'all' : subject.toUpperCase());
-            });
-        });
+        myCredits += course.credits;
 
-    //    if (courses.completed = true) {
-    //        card.className('completed');
-     //       name.className('completed');
-   //     }
+        myTotalCredits.textContent = myCredits;
+        //document.querySelector('#credits').textContent = `${myTotalCredits}`;
+
+        //    if (courses.completed = true) {
+        //        card.className('completed');
+        //       name.className('completed');
+        //     }
     });
 };
 
 //function totalCredits(filteredCourses) {
-   // document.querySelector('#credits').innerHTML = '';
+// document.querySelector('#credits').innerHTML = '';
 
 //    let myCredits = []
 //    let array = filteredCourses;
- //   for (item of array) {
+//   for (item of array) {
 //        myCredits.push(item.credits);
- //   }
+//   }
 
- //   myTotalCredits = myCredits.reduce((total, num) => {
-  //      total + num;
- //   }, 0);
+//   myTotalCredits = myCredits.reduce((total, num) => {
+//      total + num;
+//   }, 0);
 
 //    document.querySelector('#credits').innerHTML = `${myTotalCredits}`;
 //};
 
-totalCredits(courses);
+//totalCredits(courses);
 createCard(courses);
