@@ -14,8 +14,9 @@
 }
 
 main {
-    align-items: center;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
     margin: 0;
 }
 
@@ -53,7 +54,6 @@ a {
 }
 
 .title {
-
     background-color: var(--color1);
     justify-content: center;
     display: flex;
@@ -148,6 +148,7 @@ figcaption {
 
 figure img {
     width: 100%;
+    height: auto;
     padding: 1rem;
 }
 
