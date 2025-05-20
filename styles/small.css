@@ -80,7 +80,9 @@ nav a:hover {
     font-weight: bolder;
 }
 
-.navigation {}
+.navigation {
+    
+}
 
 .nav ul {
     background-color: var(--color3);
