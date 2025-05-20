@@ -53,15 +53,11 @@ a {
 }
 
 .title {
-    width: 100%;
 
     background-color: var(--color1);
-
-    align-content: center;
+    justify-content: center;
     display: flex;
-    text-align: center;
     padding: 1rem;
-
 }
 
 .title p {
@@ -201,7 +197,7 @@ button {
 
 .square {
     color: transparent;
-    background-color: aqua;
+    background-color: var(--color3);
     font-size: large;
 }
 
