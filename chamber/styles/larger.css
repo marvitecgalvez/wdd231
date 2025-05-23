@@ -1,0 +1,35 @@
+@media (min-width: 320px) {
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav a {
+        font-size: 0.96rem;
+    }
+
+    .open li {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+}
+
+@media (min-width: 360px) {
+
+    nav a {
+        font-size: large;
+    }
+
+}
