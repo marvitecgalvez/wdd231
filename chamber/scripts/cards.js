@@ -13,23 +13,26 @@ getMemberData();
 const displayMembers = (members) => {
     members.forEach((members) => {
         let card = document.createElement('section');
+        let logo = document.createElement('img');
         let name = document.createElement('p');
         let address = document.createElement('p');
         let phone = document.createElement('p');
         let web = document.createElement('p');
-        let logo = document.createElement('img');
         let level = document.createElement('p');
         let since = document.createElement('p');
 
-        name.textContent = `${members.name}`;
-        address.innerHTML = `Address: ${members.address}`;
-        phone.innerHTML = `Phone: ${members.phone}`;
-        web.textContent = `<a href="${members.url}">Visit Website</a>`;
+
         logo.setAttribute('src', members.url);
         logo.setAttribute('alt', `logo of ${members.name}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '200');
         logo.setAttribute('height', 'auto');
+        name.textContent = `${members.name}`;
+        address.innerHTML = `Address: ${members.address}`;
+        phone.innerHTML = `Phone: ${members.phone}`;
+        web.textContent = `<a href="${members.url}">Visit Website</a>`;
+        level.innerHTML = ``;
+
 
         card.appendChild(name);
         card.appendChild(address);
