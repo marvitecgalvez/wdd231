@@ -31,7 +31,8 @@ const displayMembers = (members) => {
         address.innerHTML = `Address: ${members.address}`;
         phone.innerHTML = `Phone: ${members.phone}`;
         web.textContent = `<a href="${members.url}">Visit Website</a>`;
-        level.innerHTML = ``;
+        level.innerHTML = `Membership: ${getMembership(members.level)}`;
+        since.innerHTML = `Member since: ${members.since}`;
 
 
         card.appendChild(name);
