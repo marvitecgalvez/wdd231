@@ -134,13 +134,20 @@ h1 {
     width: auto;
     color: var(--color7);
     padding: 0.2rem 1rem;
-    border-radius:8px;
+    border-radius: 8px;
 }
 
 #cards section {
     border: 2px solid black;
     padding: 1rem;
     margin: 1rem;
+    text-align: center;
+}
+
+#cards img {
+    box-shadow: 1px 5px 15px black;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 footer {
