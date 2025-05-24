@@ -5,7 +5,7 @@
             "address": "Calle 2 de Mayo 298, Miraflores, Lima",
             "phone": "+51 994 150 263",
             "url": "panchita.pe",
-            "image": "images/panchita.svg",
+            "image": "https://marvitecgalvez.github.io/wdd231/chamber/images/panchita.svg",
             "level": "3",
             "year": "2015"
         },
