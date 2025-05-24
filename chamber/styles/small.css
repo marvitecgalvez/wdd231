@@ -111,6 +111,33 @@ nav a:hover {
 
 }*/
 
+h1 {
+    padding: 0rem 1rem;
+    margin: 0;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.article section {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 15px;
+    background-color: var(--color5);
+}
+
+.article h2 {
+    background-color: var(--color1);
+    width: auto;
+    color: var(--color7);
+    padding: 0.2rem 1rem;
+    border-radius:8px;
+}
+
+
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -134,4 +161,7 @@ footer div {
 
 .network {
     padding: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }

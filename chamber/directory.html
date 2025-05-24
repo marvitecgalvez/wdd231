@@ -53,10 +53,39 @@
             <img src="images/lima-banner-larger.jpg" alt="Lima City">
             <!--<button type="button" id="keynote" aria-label="Get keynote tickets">Keynote Tickets</button>-->
         </div>
-        <section>
+        <h1>Home</h1>
+        <div class="article">
+            <section>
+                <h2>Events</h2>
+                <div>
+
+                </div>
+            </section>
+
+            <section>
+                <h2>Current Weather</h2>
+                <div>
+                    <p><span id="grades"></span>° F</p>
+                    <p>High: <span id="hGrades">°</span></p>
+                    <p>Low: <span id="lGrades">°</span></p>
+                    <p>Humidity: <span id="humidity">%</span></p>
+                    <p>Sunrise: <span id="sunrise"></span></p>
+                    <p>Sunset: <span id="sunset"></span></p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Weather Forecast</h2>
+                <div>
+                    <p>Today: <span id="todayGrades"></span></p>
+                    <p><span id="yesterday"></span>: <span id="yGrades"></span></p>
+                    <p><span id="yesterday"></span>: <span id="yYGrades"></span></p>
+                </div>
+            </section>
+        </div>
+        <section id="container">
 
         </section>
-
     </main>
 
     <footer>
@@ -74,7 +103,7 @@
         <div>
             <p>WDD231 Class Project</p>
             <p>Marvin M. Gálvez</p>
-            <p>©2025 Lima Chamber of Commerce</p>
+            <p>©<span id="currentYear"></span> Lima Chamber of Commerce</p>
             <p>Last Modification: <span id="lastModified"></span></p>
         </div>
     </footer>
