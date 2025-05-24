@@ -28,6 +28,7 @@ const displayMembers = (members) => {
         logo.setAttribute('width', '200');
         logo.setAttribute('height', 'auto');
         name.textContent = `${members.name}`;
+        name.classList = 'cardName';
         address.innerHTML = `Address: ${members.address}`;
         phone.innerHTML = `Phone: ${members.phone}`;
         web.innerHTML = `<a href="${members.url}">Visit Website</a>`;

@@ -3,7 +3,7 @@
     --color2: rgb(40, 61, 5);
     --color3: rgb(73, 73, 53);
     --color4: rgb(187, 144, 5);
-    --color5: rgb(167, 180, 146);
+    --color5: rgb(224, 231, 221);
     --color6: rgb(64, 175, 146);
     --color7: rgb(255, 255, 255);
     --color8: rgb(0, 0, 0);
@@ -137,17 +137,47 @@ h1 {
     border-radius: 8px;
 }
 
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.cardName {
+    font-size: x-large;
+    margin: 0px 0px 15px;
+}
+
 #cards section {
-    border: 2px solid black;
+    width: auto;
+    max-width: 520px;
+    color: var(--color1);
+    font-weight: bold;
+    text-shadow: 0px 1px 5px var(--color7);
+    background-color: var(--color5);
+    box-shadow: 0px 5px 5px 0px rgb(117, 117, 117);
+    border-radius: 15px;
     padding: 1rem;
     margin: 1rem;
     text-align: center;
 }
 
 #cards img {
+    background-color: var(--color7);
     box-shadow: 1px 5px 15px black;
     padding: 0.5rem;
     margin-bottom: 1rem;
+}
+
+#cards p {
+    font-family: var(--font2);
+}
+
+#cards a {
+    color: var(--color8);
+    text-decoration: none;
+    text-shadow: 0px 3px 10px 10px rgb(255, 255, 255);
 }
 
 footer {
