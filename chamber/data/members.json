@@ -4,7 +4,7 @@
             "name": "Panchita",
             "address": "Calle 2 de Mayo 298, Miraflores, Lima",
             "phone": "+51 994 150 263",
-            "url": "panchita.pe",
+            "url": "https://panchita.pe",
             "image": "https://marvitecgalvez.github.io/wdd231/chamber/images/panchita.svg",
             "level": "3",
             "year": "2015"
@@ -13,7 +13,7 @@
             "name": "ANTIcold",
             "address": "Jiron Caliente 999, la Merced, Lima",
             "phone": "+51 960 651 485",
-            "url": "anticold.com",
+            "url": "https://anticold.com",
             "image": "images/abrigo.svg",
             "level": "1",
             "year": "2024"
@@ -22,7 +22,7 @@
             "name": "Phone Star",
             "address": "Cl Naranjita 8152, curcuma, Lima",
             "phone": "+51 965 462 155",
-            "url": "phonestar.com",
+            "url": "https://phonestar.com",
             "image": "images/celular.svg",
             "level": "2",
             "year": "2020"
@@ -31,7 +31,7 @@
             "name": "Toys Fun",
             "address": "Jr Michael jackson 1960, La Victoria, Lima",
             "phone": "+51 945 862 566",
-            "url": "toysfun.com",
+            "url": "https://toysfun.com",
             "image": "images/toys.svg",
             "level": "2",
             "year": "2019"
@@ -40,7 +40,7 @@
             "name": "Clean Ya",
             "address": "Av paque 2346, Carabayllo, Lima",
             "phone": "+51 932 581 132",
-            "url": "cleanya.com",
+            "url": "https://cleanya.com",
             "image": "images/soap.svg",
             "level": "1",
             "year": "2023"
@@ -49,7 +49,7 @@
             "name": "Chuzchuz",
             "address": "Jr Barracuda 222, Trapecio, Lima",
             "phone": "+51 948 584 562",
-            "url": "chuzchuz.com",
+            "url": "https://chuzchuz.com",
             "image": "images/shoes.svg",
             "level": "",
             "year": ""
@@ -58,7 +58,7 @@
             "name": "Lima Inst",
             "address": "Jr Hendrix 888, Carambola, Lima",
             "phone": "+51 975 984 982",
-            "url": "limainst.com",
+            "url": "https://limainst.com",
             "image": "images/guitar.svg",
             "level": "1",
             "year": "2018"
@@ -67,7 +67,7 @@
             "name": "Hogar Center",
             "address": "Jr Chachapoyas 654, Tulipan, Lima",
             "phone": "+51 958 625 681",
-            "url": "hogarcenter.com",
+            "url": "https://hogarcenter.com",
             "image": "images/freezer.svg",
             "level": "3",
             "year": "2016"
@@ -76,7 +76,7 @@
             "name": "Home Fix",
             "address": "Av Industrial 2462, Tarapoto, Lima",
             "phone": "+51 973 853 235",
-            "url": "homefix.com",
+            "url": "https://homefix.com",
             "image": "images/ferreteria.svg",
             "level": "1",
             "year": "2018"
@@ -85,7 +85,7 @@
             "name": "House & Home",
             "address": "Av sincasa 1010, La Molina, Lima",
             "phone": "+51 987 456 123",
-            "url": "houseandhome.com",
+            "url": "https://houseandhome.com",
             "image": "images/chair.svg",
             "level": "2",
             "year": "2017"
