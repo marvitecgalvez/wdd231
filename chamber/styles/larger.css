@@ -15,7 +15,7 @@
     }
 
     nav a {
-        font-size: 0.96rem;
+        font-size: 0.8rem;
     }
 
     .open li {
@@ -26,7 +26,7 @@
 
 }
 
-@media (min-width: 360px) {
+@media (min-width: 380px) {
 
     nav a {
         font-size: large;
