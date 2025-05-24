@@ -23,18 +23,18 @@ const displayMembers = (members) => {
 
         name.textContent = `${members.name}`;
         address.innerHTML = `Address: ${members.address}`;
-        phone.innerHTML = `Place of Birth: ${members.phone}`;
-        web.innerHTML = `${members.url}`;
-        portrait.setAttribute('src', members.imageurl);
-        portrait.setAttribute('alt', `Portrait of ${members.name} ${members.lastname}`);
-        portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '200');
-        portrait.setAttribute('height', 'auto');
+        phone.innerHTML = `Phone: ${members.phone}`;
+        web.textContent = `<a href="${members.url}">Visit Website</a>`;
+        logo.setAttribute('src', members.url);
+        logo.setAttribute('alt', `logo of ${members.name}`);
+        logo.setAttribute('loading', 'lazy');
+        logo.setAttribute('width', '200');
+        logo.setAttribute('height', 'auto');
 
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
-        card.appendChild(portrait);
+        card.appendChild(logo);
 
         cards.appendChild(card);
     });
