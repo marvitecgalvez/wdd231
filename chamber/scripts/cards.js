@@ -1,4 +1,4 @@
-const url = 'https://marvitecgalvez.github.io/wdd231/chamber/data/members.json"';
+const url = 'https://marvitecgalvez.github.io/wdd231/chamber/data/members.json';
 
 const cards = document.querySelector('#cards');
 
