@@ -13,23 +13,27 @@ getMemberData();
 const displayMembers = (members) => {
     members.forEach((members) => {
         let card = document.createElement('section');
-        let fullname = document.createElement('h2');
-        let datebirth = document.createElement('p');
-        let placebirth = document.createElement('p');
-        let portrait = document.createElement('img');
+        let name = document.createElement('p');
+        let address = document.createElement('p');
+        let phone = document.createElement('p');
+        let web = document.createElement('p');
+        let logo = document.createElement('img');
+        let level = document.createElement('p');
+        let since = document.createElement('p');
 
-        fullname.textContent = `${members.name} ${members.lastname}`;
-        datebirth.innerHTML = `Date of Birth: ${members.birthdate}`;
-        placebirth.innerHTML = `Place of Birth: ${members.birthplace}`;
+        name.textContent = `${members.name}`;
+        address.innerHTML = `Address: ${members.address}`;
+        phone.innerHTML = `Place of Birth: ${members.phone}`;
+        web.innerHTML = `${members.url}`;
         portrait.setAttribute('src', members.imageurl);
         portrait.setAttribute('alt', `Portrait of ${members.name} ${members.lastname}`);
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '200');
         portrait.setAttribute('height', 'auto');
 
-        card.appendChild(fullname);
-        card.appendChild(datebirth);
-        card.appendChild(placebirth);
+        card.appendChild(name);
+        card.appendChild(address);
+        card.appendChild(phone);
         card.appendChild(portrait);
 
         cards.appendChild(card);
