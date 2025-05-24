@@ -31,7 +31,7 @@ const displayMembers = (members) => {
         address.innerHTML = `Address: ${members.address}`;
         phone.innerHTML = `Phone: ${members.phone}`;
         web.innerHTML = `<a href="${members.url}">Visit Website</a>`;
-        //level.innerHTML = `Membership: ${getMembership(members.level)}`;
+        level.innerHTML = `Membership: ${getMembership(members.level)}`;
         since.innerHTML = `Member since: ${members.year}`;
 
         card.appendChild(logo);
@@ -48,11 +48,9 @@ const displayMembers = (members) => {
 }
 
 function getMembership(level) {
-    let nivel = 'Member';
-    if (level.level === 3) {
-        nivel = 'Gold';
-    }
-    if (level.level === 2) {
-        nivel = 'Silver';
+    switch (level) {
+        case 3: return "Gold";
+        case 2: return "Silver";
+        case 1: return "Member";
     }
 }
