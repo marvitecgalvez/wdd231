@@ -112,14 +112,24 @@ nav a:hover {
 }*/
 
 h1 {
+    font-family: var(--font2);
     padding: 0rem 1rem;
     margin: 0;
+}
+
+h2 {
+    font-family: var(--font2);
+    font-size: x-large;
+    padding: 1rem;
+    color: var(--color4);
+    text-align: center;
 }
 
 .article {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+
 }
 
 .article section {
@@ -127,6 +137,7 @@ h1 {
     margin: 1rem;
     border-radius: 15px;
     background-color: var(--color5);
+    text-align: center;
 }
 
 .article h2 {
@@ -151,7 +162,7 @@ h1 {
 
 #cards section {
     width: 100%;
-    max-width: 520px;
+    max-width: 350px;
     color: var(--color1);
     font-weight: bold;
     text-shadow: 0px 1px 5px var(--color7);
