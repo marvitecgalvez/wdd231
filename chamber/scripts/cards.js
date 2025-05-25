@@ -1,5 +1,3 @@
-//const url = 'https://marvitecgalvez.github.io/wdd231/chamber/data/members.json';
-
 const cards = document.querySelector('#cards');
 
 async function getMemberData() {
@@ -33,11 +31,15 @@ const displayMembers = (members) => {
         name.classList = 'cardName';
 
         address.innerHTML = `${members.address}`;
+
         phone.innerHTML = `${members.phone}`;
         phone.classList = 'ocult';
+
         web.innerHTML = `<a href="${members.url}">Visit Website</a>`;
+
         since.innerHTML = `Since: ${members.year}`;
         since.classList = 'ocult';
+
         level.innerHTML = `Membership: ${getMembership(members.level)}`;
         level.classList = 'ocult';
 
@@ -72,6 +74,7 @@ const display = document.querySelector("#cards");
 gridbutton.addEventListener("click", () => {
     display.classList.add("grid");
     display.classList.remove("list");
+    cards.classList.remove("zebra");
 });
 
 listbutton.addEventListener("click", showList);
@@ -79,4 +82,5 @@ listbutton.addEventListener("click", showList);
 function showList() {
     display.classList.add("list");
     display.classList.remove("grid");
+    cards.classList.add("zebra");
 }

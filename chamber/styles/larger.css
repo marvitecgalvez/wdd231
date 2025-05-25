@@ -45,7 +45,12 @@
 
 }
 
-@media (min-width: 480px) {
+@media (min-width: 660px) {
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1fr 1fr 1fr;
+        max-width: 860px;
+    }
 
     .ocult {
         display: block;
