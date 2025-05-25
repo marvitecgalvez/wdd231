@@ -28,13 +28,19 @@ const displayMembers = (members) => {
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '200');
         logo.setAttribute('height', 'auto');
+
         name.textContent = `${members.name}`;
         name.classList = 'cardName';
-        address.innerHTML = `Address: ${members.address}`;
-        phone.innerHTML = `Phone: ${members.phone}`;
+
+        address.innerHTML = `${members.address}`;
+        phone.innerHTML = `${members.phone}`;
+        phone.classList = 'ocult';
         web.innerHTML = `<a href="${members.url}">Visit Website</a>`;
+        since.innerHTML = `Since: ${members.year}`;
+        since.classList = 'ocult';
         level.innerHTML = `Membership: ${getMembership(members.level)}`;
-        since.innerHTML = `Member since: ${members.year}`;
+        level.classList = 'ocult';
+
 
         card.appendChild(logo);
         card.appendChild(name);
