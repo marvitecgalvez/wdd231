@@ -3,6 +3,7 @@
 const cards = document.querySelector('#cards');
 
 async function getMemberData() {
+    cards.classList.add("grid");
     const response = await fetch('data/members.json');
     const data = await response.json();
     displayMembers(data.members);
@@ -60,7 +61,7 @@ function getMembership(level) {
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+const display = document.querySelector("#cards");
 
 gridbutton.addEventListener("click", () => {
     display.classList.add("grid");
