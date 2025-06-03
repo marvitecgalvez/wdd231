@@ -3,7 +3,7 @@ const highTemp = document.querySelector('#hGrades');
 const lowTemp = document.querySelector('#lGrades');
 
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const captionDesc = document.querySelector('#figcaption');
 
 const humidity = document.querySelector('#humidity');
 const sunriseDate = document.querySelector('#sunrise');

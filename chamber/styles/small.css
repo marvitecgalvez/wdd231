@@ -94,7 +94,7 @@ nav a:hover {
 
 }
 
-.hero button {
+#keynote {
     background-color: var(--color3);
     border: none;
     border-radius: 10px;
