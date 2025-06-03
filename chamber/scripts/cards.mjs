@@ -10,7 +10,7 @@ async function getMemberData() {
 getMemberData();
 
 const displayMembers = (members) => {
-    members.forEach((members) => {
+    members.filter((members) => {
         let card = document.createElement('section');
         let logo = document.createElement('img');
         let name = document.createElement('p');
@@ -57,7 +57,7 @@ const displayMembers = (members) => {
     });
 }
 
-function getMembership(level) {
+export function getMembership(level) {
     switch (level) {
         case 3: return "Gold";
         case 2: return "Silver";
@@ -84,3 +84,5 @@ function showList() {
     display.classList.remove("grid");
     cards.classList.add("zebra");
 }
+
+export default displayMembers;

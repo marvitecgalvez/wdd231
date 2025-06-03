@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/cards.js" defer></script>
+    <script type="module" src="scripts/cards.mjs"></script>
     <script src="scripts/events.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <meta property="og:title" content="Lima Chamber of Commerce Page">
     <meta property="og:description" content="All Information about city Commerce">
     <meta property="og:image" content="https://marvitecgalvez.github.io/wdd231/chamber/images/lima-larger.webp">
@@ -52,10 +53,11 @@
     <main>
         <div class="hero">
             <img src="images/lima-banner-larger.webp" alt="Lima City">
-            <button type="button" id="keynote" aria-label="Join the chamber">JOIN THE CHAMBER</button>
+            <button type="button" id="keynote" aria-label="Join the chamber"><a href="join.html">JOIN THE
+                    CHAMBER</a></button>
         </div>
         <h1>Directory</h1>
-        <h2>City Board</h2>
+        <h2>CITY BOARD</h2>
         <div class="article">
             <section>
                 <h2>Events</h2>
@@ -67,13 +69,14 @@
             <section>
                 <h2>Current Weather</h2>
                 <div class="weather-icon">
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                    </figure>
                     <div>
-                        <img src="images/weather-icon.svg" alt="weather icon" width="60">
-                    </div>
-                    <div>
-                        <p><span id="grades"></span>° F</p>
-                        <p>High: <span id="hGrades">°</span></p>
-                        <p>Low: <span id="lGrades">°</span></p>
+                        <p><span id="current-temp"></span></p>
+                        <figcaption></figcaption>
+                        <p>High: <span id="hGrades"></span></p>
+                        <p>Low: <span id="lGrades"></span></p>
                         <p>Humidity: <span id="humidity">%</span></p>
                         <p>Sunrise: <span id="sunrise"></span></p>
                         <p>Sunset: <span id="sunset"></span></p>
@@ -84,13 +87,13 @@
             <section>
                 <h2>Weather Forecast</h2>
                 <div>
-                    <p>Today: <span id="todayGrades"></span></p>
-                    <p><span id="yesterday"></span>: <span id="yGrades"></span></p>
-                    <p><span id="beforeYesterday"></span>: <span id="yYGrades"></span></p>
+                    <p><span id="todayGrades"></span></p>
+                    <p><span id="tomorrow"></span><span id="tGrades"></span></p>
+                    <p><span id="afterTomorrow"></span><span id="aTGrades"></span></p>
                 </div>
             </section>
         </div>
-        <h2>Business Directory</h2>
+        <h2>BUSINESS DIRECTORY</h2>
         <div class="view">
             <button id="grid">⁝⁝⁝</button>
             <button id="list">☰</button>

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/cards.js" defer></script>
+    <script type="module" src="scripts/cards-gold.mjs"></script>
     <script src="scripts/events.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <meta property="og:title" content="Lima Chamber of Commerce Page">
@@ -53,10 +53,14 @@
     <main>
         <div class="hero">
             <img src="images/lima-banner-larger.webp" alt="Lima City">
-            <button type="button" id="keynote" aria-label="Join the chamber">JOIN THE CHAMBER</button>
+            <div>
+                <button type="button" id="keynote" aria-label="Join the chamber"><a href="join.html">JOIN THE
+                        CHAMBER</a></button>
+            </div>
+
         </div>
         <h1>Home</h1>
-        <h2>City Board</h2>
+        <h2>CITY BOARD</h2>
         <div class="article">
             <section>
                 <h2>Events</h2>
@@ -92,12 +96,12 @@
                 </div>
             </section>
         </div>
-        <h2>Business Directory</h2>
+        <h2>OUR OUTSTANDING</h2>
         <div class="view">
             <button id="grid">⁝⁝⁝</button>
             <button id="list">☰</button>
         </div>
-        <section id="cards">
+        <section id="spotlight">
 
         </section>
     </main>
